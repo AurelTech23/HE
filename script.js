@@ -422,6 +422,7 @@ document.getElementById('bouton').addEventListener('click', function(){
 });
 
 openBtn.addEventListener("click", function () {
+  alert("e")
   popup.style.display = "block";
 });
 
