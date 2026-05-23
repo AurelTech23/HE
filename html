@@ -1,0 +1,83 @@
+<head>
+    <meta charset="utf-8">
+    <title>Carte HE</title>
+    <!-- CSS Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <!-- Ton CSS -->
+    <link rel="stylesheet" href="/src/styles.css">
+</head>
+
+<body>
+<!-- ENTETE FIXE EN HAUT - EN DEHORS DES PAGES -->
+<div class="entete">
+  <div class="image">
+    <img src="/src/logossfondblanc.png" alt="huiles" id="monimage2"/>
+  </div>
+  <div class="menu">
+    <button onclick="showPage('page1')">Fournisseurs</button>
+    <button onclick="showPage('page2')">À propos de nous</button>
+  </div>
+</div>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+  <div class="formulaire"><h1>Cartographie des huiles essentielles européennes</h1></div>
+
+  <br><br>
+  <div class="image">
+    <img src="/src/huiles.png" alt="huiles" id="monimage"/>
+  </div>
+  <br/><br/>
+
+  <div id="placemap">
+    <div id="map"></div>
+  </div>
+
+  <!-- JS Leaflet -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <!-- Ton JavaScript -->
+  <script src="script.js"></script>
+
+  <br><br/>
+  <div class="bouton2">
+    <button id="bouton2">Demandez à être référencé</button>
+  </div>
+  <br><br/>
+
+  <div class="boxcoutour">
+    <div class="croix"><button id="closePopup">X</button></div>
+    <div class="contour">
+      <div class="reference">
+        <h2>Contact</h2>
+      </div>
+      <div class="contact">
+        <br><textarea type="text" id="monexp1" name="monexp" placeholder="Votre Prénom Nom"/><br/>
+        <br><textarea type="text" id="monexp2" name="monexp" placeholder="Votre nom de société"/><br/>
+        <br><textarea type="email" id="monexp3" name="monexp" placeholder="Votre email"/><br/>
+        <br><textarea type="text" id="monexp4" name="monexp" placeholder="Taper votre texte ici..."/><br/>
+        <br><br/>
+        <input type="submit" id="bouton" value=" Envoyer" />
+      </div>
+    </div>
+  </div>
+
+  <div class="enfin"></div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+  <h1>A propos de nous</h1>
+  <div id="citation" class="text">Ressentir l'essentiel — KAN</div>
+  <p>KAN — Ressentir l'essentiel
+
+KAN vient du japonais 感 — kan — tiré du verbe kanjiru, « ressentir ». Ce kanji désigne ce qui se passe en nous avant les mots : une impression, une émotion, une réaction intérieure. Pas ce que l'on pense. Ce que l'on ressent.
+
+C'est à partir de cette idée que la marque s'est construite, avec la conviction qu'un parfum touche quelque chose d'intime et d'instinctif, et que la qualité de ce qu'il provoque dépend directement de la qualité de ce dont il est fait.
+
+KAN poursuit deux missions étroitement liées. La première est de recenser et d'évaluer les fournisseurs européens d'huiles essentielles et d'extraits CO2 biologiques, distillateurs, producteurs, coopératives, afin de constituer une cartographie précise de ces matières premières : leurs origines, leurs profils olfactifs, leurs méthodes d'obtention. La seconde est de créer des parfums élaborés exclusivement à partir de ces matières premières naturelles et biologiques, en travaillant chaque formule comme une composition sensible. KAN se veut une marque innovante, proposant une véritable alternative pour ceux qui souhaitent porter un parfum plus responsable et plus vert, sans compromis sur l'expérience olfactive.
+
+Ces deux missions se nourrissent l'une l'autre : mieux connaître les matières premières, c'est mieux comprendre ce qu'elles peuvent exprimer. Et c'est, au fond, ce que KAN cherche : donner à ressentir quelque chose de juste.</p>
+</div>
+
+</body>
+</html>
