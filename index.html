@@ -1,15 +1,16 @@
-<head>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <title>Carte HE</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
     <link rel="stylesheet" href="/src/styles.css">
 </head>
-</head>
 
 <body>
 
-<!-- ENTETE FIXE EN HAUT - EN DEHORS DES PAGES -->
+<!-- ENTETE -->
 <div class="entete">
   <div class="image">
     <img src="/src/logossfondblanc.png" alt="huiles" id="monimage2"/>
@@ -22,47 +23,36 @@
 
 <!-- PAGE 1 -->
 <div id="page1" class="page active">
-  <div class="formulaire"><h1>Cartographie des huiles essentielles européennes</h1></div>
-
+  <div class="formulaire">
+    <h1>Cartographie des huiles essentielles européennes</h1>
+  </div>
   <br><br>
   <div class="image">
     <img src="/src/huiles.png" alt="huiles" id="monimage"/>
   </div>
   <br/><br/>
-
   <div id="placemap">
     <div id="map"></div>
-
   </div>
-
-  <!-- JS Leaflet -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <!-- Ton JavaScript -->
-  <script src="script.js"></script>
-
   <br><br/>
   <div class="bouton2">
     <button id="bouton2">Demandez à être référencé</button>
   </div>
   <br><br/>
-
   <div class="boxcoutour">
     <div class="croix"><button id="closePopup">X</button></div>
     <div class="contour">
-      <div class="reference">
-        <h2>Contact</h2>
-      </div>
+      <div class="reference"><h2>Contact</h2></div>
       <div class="contact">
-        <br><textarea type="text" id="monexp1" name="monexp" placeholder="Votre Prénom Nom"/><br/>
-        <br><textarea type="text" id="monexp2" name="monexp" placeholder="Votre nom de société"/><br/>
-        <br><textarea type="email" id="monexp3" name="monexp" placeholder="Votre email"/><br/>
-        <br><textarea type="text" id="monexp4" name="monexp" placeholder="Taper votre texte ici..."/><br/>
+        <br><textarea id="monexp1" placeholder="Votre Prénom Nom"></textarea><br/>
+        <br><textarea id="monexp2" placeholder="Votre nom de société"></textarea><br/>
+        <br><textarea id="monexp3" placeholder="Votre email"></textarea><br/>
+        <br><textarea id="monexp4" placeholder="Taper votre texte ici..."></textarea><br/>
         <br><br/>
-        <input type="submit" id="bouton" value=" Envoyer" />
+        <input type="submit" id="bouton" value="Envoyer" />
       </div>
     </div>
   </div>
-
   <div class="enfin"></div>
 </div>
 
@@ -80,7 +70,10 @@ KAN poursuit deux missions étroitement liées. La première est de recenser et 
 
 Ces deux missions se nourrissent l'une l'autre : mieux connaître les matières premières, c'est mieux comprendre ce qu'elles peuvent exprimer. Et c'est, au fond, ce que KAN cherche : donner à ressentir quelque chose de juste.</p>
 </div>
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<!-- SCRIPTS TOUT EN BAS - après tout le contenu -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="script.js"></script>
+
 </body>
 </html>
