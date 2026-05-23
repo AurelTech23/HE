@@ -1,0 +1,173 @@
+body{
+font-family:Poppins;
+margin:0;
+padding:0;
+}
+
+
+
+
+
+.entete{ 
+height:30px; 
+display:flex; 
+justify-content: flex-start;
+background: linear-gradient(135deg, #FF637E, #FF9EB0); 
+}
+#monimage2{
+  
+  height : 30px;
+}
+
+h1{
+  color:#FF637E
+ 
+}
+
+
+
+#monimage{
+ height: 310px;
+    width: 600px;
+}
+.image{
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:20px;
+}
+
+#map {
+    height: 600px;
+    width: 90%;
+    
+}
+#placemap{
+  display: flex;
+ justify-content : space-around;
+ align-items:center;
+}
+
+.formulaire{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.contact{
+display:flex;
+justify-content:center;
+flex-direction:column;
+}
+
+
+.reference{
+font-size:25px;
+font-weight:bold;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+
+.contour{
+border: solid 2px #FF637E;
+width:500px;
+padding:20px;
+background-color:#FFF1F2;
+border-radius:20px;
+}
+
+#bouton{
+background-color:#FF637E;
+color:white;
+border:none;
+padding:10px;
+border-radius:10px;
+cursor:pointer;
+}
+
+
+.boxcoutour{
+  display:none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  z-index: 1000;
+
+.croix{
+  display:flex;
+  justify-content:flex-end
+}
+
+}
+
+#bouton2{
+background: linear-gradient(135deg, #FF637E, #FF9EB0);
+color: white;
+border: none;
+padding: 15px 30px;
+font-size: 16px;
+font-weight: bold;
+border-radius: 30px;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 4px 12px rgba(255, 99, 126, 0.3);
+}
+
+.bouton2{
+  display: flex;
+  justify-content: center;
+}
+
+.enfin{
+  height:30px;
+  
+  background: linear-gradient(135deg, #FF637E, #FF9EB0);
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+#page2 {
+  padding: 40px;
+  background: linear-gradient(135deg, #FFF1F2, #ffffff);
+}
+
+#page2 h1 {
+  color: #FF637E;
+  font-size: 2.5em;
+  border-left: 5px solid #FF637E;
+  padding-left: 15px;
+}
+
+#page2 p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: #333;
+}
+
+.citation {
+  background: linear-gradient(135deg, #FF637E, #FF9EB0);
+  color: white;
+  font-size: 1.3em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 50px;
+  border-radius: 20px;
+  margin: 30px 0;
+  box-shadow: 0 8px 20px rgba(255, 99, 126, 0.3);
+}
